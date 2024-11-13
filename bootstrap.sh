@@ -53,5 +53,6 @@ echo "Created start page: main.tsx"
 rm ./src/app.tsx ./src/app.css
 
 # Init Git repo
+echo "Initialize Git repository"
 git init
 git add .

@@ -51,3 +51,7 @@ echo "Created start page: main.tsx"
 
 # Clean project
 rm ./src/app.tsx ./src/app.css
+
+# Init Git repo
+git init
+git add .

@@ -49,6 +49,11 @@ npx shadcn@latest add sidebar-04
 curl -sS -o ./src/main.tsx https://raw.githubusercontent.com/gpt-partners/web-starter/master/main.tsx
 echo "Created start page: main.tsx"
 
+# Add login with Auth UI
+npm install @supabase/supabase-js @supabase/auth-ui-react @supabase/auth-ui-shared
+curl -sS -o ./.env.development https://raw.githubusercontent.com/gpt-partners/web-starter/master/.env.development
+curl -sS -o ./src/components/auth.tsx https://raw.githubusercontent.com/gpt-partners/web-starter/master/auth.tsx
+
 # Clean project
 rm ./src/app.tsx ./src/app.css
 

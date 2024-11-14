@@ -46,7 +46,7 @@ npx shadcn@latest init -d -y
 npx shadcn@latest add sidebar-04
 
 # Update main.tsx
-curl -sS -o ./src/main.tsx https://raw.githubusercontent.com/gpt-partners/web-starter/master/main.tsx
+curl -sS -o ./src/Main.tsx https://raw.githubusercontent.com/gpt-partners/web-starter/master/Main.tsx
 echo "Created start page: main.tsx"
 
 # Add login with Auth UI

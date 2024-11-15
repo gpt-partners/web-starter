@@ -38,7 +38,7 @@ curl -sS -o ./vite.config.ts https://raw.githubusercontent.com/gpt-partners/web-
 echo "Created Vite config"
 
 # Update build script to avoid TS errors
-sed -i 's/tsc -b/tsc -b --noEmit/' package.json
+sed -i 's/tsc -b/tsc --noEmit/' package.json
 
 # Update package.json
 NEW_LINE="\"dev\": \"vite --port 3001 --host\""

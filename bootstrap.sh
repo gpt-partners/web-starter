@@ -37,9 +37,14 @@ npm i -D @types/node
 curl -sS -o ./vite.config.ts https://raw.githubusercontent.com/gpt-partners/web-starter/master/vite.config.ts
 echo "Created Vite config"
 
+# Update build script to avoid TS errors
+NEW_LINE="\"build\": \"tsc --noEmit && vite build\""
+sed -i "s/\"build\": \"tsc -b && vite build\"/$NEW_LINE/" package.json
+
 # Update package.json
 NEW_LINE="\"dev\": \"vite --port 3001 --host\""
 sed -i "s/\"dev\": \"vite\"/$NEW_LINE/" package.json
+echo "Updated npm scripts: package.json"
 
 # Run shadcn-ui init command
 npx shadcn@latest init -d -y

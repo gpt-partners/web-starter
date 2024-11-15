@@ -38,7 +38,7 @@ curl -sS -o ./vite.config.ts https://raw.githubusercontent.com/gpt-partners/web-
 echo "Created Vite config"
 
 # Update build script to avoid TS errors
-NEW_LINE="\"build\": \"tsc --noEmit && vite build\""
+NEW_LINE="\"build\": \"tsc -b --noEmit && vite build\""
 sed -i "s/\"build\": \"tsc -b && vite build\"/$NEW_LINE/" package.json
 
 # Update package.json
